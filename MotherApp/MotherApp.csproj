@@ -49,5 +49,15 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Submodule1\Submodule1.csproj">
+      <Project>{bc144ea6-ba7c-4c28-a3df-a4659e2dc11c}</Project>
+      <Name>Submodule1</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Submodule2\Submodule2.csproj">
+      <Project>{95c19dc4-e646-4e24-9aa0-78fb97a0581f}</Project>
+      <Name>Submodule2</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
