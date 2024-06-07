@@ -1,0 +1,17 @@
+name: Tag Triggered Workflow
+
+on:
+  push:
+    tags:
+      - "v[0-9]+.[0-9]+.[0-9]+(-beta)?"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Display Message
+      run: echo "Workflow triggered by tag"
