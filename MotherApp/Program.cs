@@ -15,7 +15,7 @@ namespace MotherApp
             var substractResult = subsctract.Execute(5, 2);
 
             Console.WriteLine($"Add result: {addResult} ");
-            Console.WriteLine($"Substract result: {substractResult} ");
+            Console.WriteLine($"Substract result: {substractResult}");
             Console.ReadKey();
         }
     }
